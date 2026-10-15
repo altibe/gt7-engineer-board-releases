@@ -1,5 +1,9 @@
 # GT7 Engineer Board – Downloads
 
+> **Geschlossene Beta.** Das GT7 Engineer Board wird derzeit nur innerhalb einer geschlossenen Testgruppe
+> (BpV Racing League) erprobt. Die Online-Liga-Funktionen sind ausschließlich mit Einladungscode nutzbar.
+> Es gibt keinen Support für Nutzer außerhalb der Testgruppe; Funktionen und Daten können sich jederzeit ändern.
+
 Live-Boards für Gran Turismo 7 am PC: Delta, Strategie, Kurven-Tipps, Sprachausgabe über Discord
 und Online-Vergleich mit deiner Liga. Dieses Repository enthält nur die Installationsdateien.
 
