@@ -7,7 +7,7 @@
 Live-Boards für Gran Turismo 7 am PC: Delta, Strategie, Kurven-Tipps, Sprachausgabe über Discord
 und Online-Vergleich mit deiner Liga. Dieses Repository enthält nur die Installationsdateien.
 
-**[Neueste Version herunterladen](../../releases/latest)** – dort `GT7-Engineer-Board-Setup-x.y.z.exe` wählen.
+**[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/gt7-engineer-board-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort `GT7-Engineer-Board-Setup-x.y.z.exe` wählen.
 
 ## Installation
 1. Setup herunterladen und starten.
