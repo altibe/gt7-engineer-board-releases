@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,21 @@
 <meta property="og:image" content="img/live_dark.jpg">
 <link rel="icon" href="img/favicon.png">
 <link rel="stylesheet" href="style.css">
-<script>
-  // Hell/Dunkel: gespeicherte Wahl vor dem ersten Zeichnen setzen
-  try { var t = localStorage.getItem('gt7-site-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
-</script>
 </head>
 <body>
   <header class="top">
     <div class="wrap top-in">
-      <a class="logo" href="#"><img src="img/altibe78_word_dark.webp" class="th-d" alt="Altibe78"><img loading="lazy" src="img/altibe78_word_light.webp" class="th-l" alt="Altibe78"><span>GT7 Engineer Board</span></a>
+      <a class="logo" href="#"><img src="img/altibe78_word_dark.webp"  alt="Altibe78"><span>GT7 Engineer Board</span></a>
       <nav>
         <a href="#funktionen">Funktionen</a>
         <a href="#ablauf">So funktioniert's</a>
         <a href="#download">Download</a>
-        <button type="button" id="theme" title="Hell/Dunkel umschalten">☀ Hell</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero wrap">
+    <section class="hero wrap band t-dark">
       <div class="hero-text">
         <span class="badge">Geschlossene Beta</span>
         <h1>Dein Renn&shy;ingenieur für <em>Gran Turismo 7</em></h1>
@@ -41,18 +36,18 @@
         </div>
         <ul class="facts">
           <li><b>38</b> Streckenvarianten mit Kurven-Tipps</li>
-          <li><b>11</b> Boards &amp; Werkzeuge</li>
+          <li><b>11</b> Boards &amp; Werkzeuge – hell oder dunkel</li>
           <li><b>PS5 + PC</b> – keine Zusatzhardware</li>
         </ul>
       </div>
-      <img class="hero-img themed" data-dark="img/altibe78_brand_dark.webp" data-light="img/altibe78_brand_light.webp" src="img/altibe78_brand_dark.webp" alt="Altibe78 Racing – GT3-Fahrzeuge im Teamdesign">
+      <img class="hero-img" src="img/altibe78_brand_dark.webp" alt="Altibe78 Racing – GT3-Fahrzeuge im Teamdesign">
     </section>
 
     <section id="funktionen" class="wrap">
       <h2 class="sec">Funktionen</h2>
 
-      <article class="feat">
-        <figure><img src="img/live_dark.jpg" class="th-d shot" alt="Live-Board mit Delta, Reifen, Tipp-Panel und Streckenkarte" loading="lazy"><img src="img/live_light.jpg" class="th-l shot" alt="Live-Board mit Delta, Reifen, Tipp-Panel und Streckenkarte" loading="lazy"></figure>
+      <article class="feat band t-dark">
+        <figure><img src="img/live_dark.jpg" class="shot" alt="Live-Board mit Delta, Reifen, Tipp-Panel und Streckenkarte" loading="lazy"></figure>
         <div>
           <span class="num">01</span>
           <h3>Live-Board</h3>
@@ -66,8 +61,8 @@
         </div>
       </article>
 
-      <article class="feat rev">
-        <figure><img src="img/race_dark.jpg" class="th-d shot" alt="Race-Board mit Rundenzeit, Restrunden und Tankvorschlag" loading="lazy"><img src="img/race_light.jpg" class="th-l shot" alt="Race-Board mit Rundenzeit, Restrunden und Tankvorschlag" loading="lazy"></figure>
+      <article class="feat rev band t-light">
+        <figure><img src="img/race_light.jpg" class="shot" alt="Race-Board mit Rundenzeit, Restrunden und Tankvorschlag" loading="lazy"></figure>
         <div>
           <span class="num">02</span>
           <h3>Race-Board &amp; Strategie</h3>
@@ -81,8 +76,8 @@
         </div>
       </article>
 
-      <article class="feat">
-        <figure><img src="img/tipp_dark.jpg" class="th-d shot" alt="Tipp-Board: großer Kurven-Tipp mit Entfernung und Gang" loading="lazy"><img src="img/tipp_light.jpg" class="th-l shot" alt="Tipp-Board: großer Kurven-Tipp mit Entfernung und Gang" loading="lazy"></figure>
+      <article class="feat band t-dark">
+        <figure><img src="img/tipp_dark.jpg" class="shot" alt="Tipp-Board: großer Kurven-Tipp mit Entfernung und Gang" loading="lazy"></figure>
         <div>
           <span class="num">03</span>
           <h3>Kurven-Tipps</h3>
@@ -96,7 +91,7 @@
         </div>
       </article>
 
-      <article class="feat rev">
+      <article class="feat rev band t-light">
         <figure class="voice">
           <div class="bubble">„Box nächste Runde. 38 Liter.“</div>
           <div class="bubble">„Sprit: drei Runden.“</div>
@@ -117,8 +112,8 @@
         </div>
       </article>
 
-      <article class="feat">
-        <figure><img src="img/vergleich_dark.jpg" class="th-d shot" alt="Datenvergleich zweier Runden mit Tempo, Gas, Bremse und Zeit je Kurve" loading="lazy"><img src="img/vergleich_light.jpg" class="th-l shot" alt="Datenvergleich zweier Runden mit Tempo, Gas, Bremse und Zeit je Kurve" loading="lazy"></figure>
+      <article class="feat band t-dark">
+        <figure><img src="img/vergleich_dark.jpg" class="shot" alt="Datenvergleich zweier Runden mit Tempo, Gas, Bremse und Zeit je Kurve" loading="lazy"></figure>
         <div>
           <span class="num">05</span>
           <h3>Datenvergleich &amp; Analyse</h3>
@@ -132,8 +127,8 @@
         </div>
       </article>
 
-      <article class="feat rev">
-        <figure><img src="img/online_dark.jpg" class="th-d shot" alt="Online-Seite mit Liga-Bestrunden und Liga-Mittelwerten" loading="lazy"><img src="img/online_light.jpg" class="th-l shot" alt="Online-Seite mit Liga-Bestrunden und Liga-Mittelwerten" loading="lazy"></figure>
+      <article class="feat rev band t-light">
+        <figure><img src="img/online_light.jpg" class="shot" alt="Online-Seite mit Liga-Bestrunden und Liga-Mittelwerten" loading="lazy"></figure>
         <div>
           <span class="num">06</span>
           <h3>Online-Liga</h3>
@@ -147,15 +142,29 @@
         </div>
       </article>
 
-      <div class="more">
+      <article class="feat band t-dark">
+        <figure><img src="img/design_split.jpg" class="shot" alt="Live-Board, links im dunklen, rechts im hellen Design" loading="lazy"></figure>
+        <div>
+          <span class="num">07</span>
+          <h3>Hell oder Dunkel</h3>
+          <p>Jedes Board gibt es in zwei Designs – du entscheidest.</p>
+          <ul>
+            <li><b>Dunkel</b> für abends und im abgedunkelten Sim-Rig</li>
+            <li><b>Hell</b> für Tageslicht, Tablet am Fenster oder Ausdrucke</li>
+            <li>Umschalten mit einem Klick auf <b>☀ Hell / ☾ Dunkel</b> oben rechts – gilt für alle Boards</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="more band t-light">
         <div><h4>Delta-Anzeige</h4><p>Nur das Delta, riesig – für Tablet oder zweiten Bildschirm.</p></div>
         <div><h4>Aufzeichnung</h4><p>Eigene Gold-Runde als Ideallinie für Strecken ohne Vorlage.</p></div>
         <div><h4>Volle Kurvenliste</h4><p>Alle Tipps einer Strecke vorm Rennen in Ruhe nachlesen.</p></div>
-        <div><h4>Hell &amp; Dunkel</h4><p>Jedes Board in beiden Farbschemata – umschalten mit einem Klick.</p></div>
+        <div><h4>Session-Übersicht</h4><p>Alle Runden nach Stint, Bestzeit und Konstanz auf einen Blick.</p></div>
       </div>
     </section>
 
-    <section id="ablauf" class="wrap">
+    <section id="ablauf" class="wrap band t-light">
       <h2 class="sec">So funktioniert's</h2>
       <ol class="steps">
         <li><span>1</span><h4>PS5 sendet</h4><p>GT7 schickt seine Telemetrie über dein Heimnetz – ohne Zusatzhardware, ohne Mod.</p></li>
@@ -163,12 +172,12 @@
         <li><span>3</span><h4>Du fährst</h4><p>Die Boards laufen im Browser – auf dem PC, Tablet oder Handy im selben WLAN – und der Engineer spricht im Headset.</p></li>
       </ol>
       <figure class="setup">
-        <img src="img/setup_dark.jpg" class="th-d shot" alt="Einrichtungsassistent mit fünf Schritten" loading="lazy"><img src="img/setup_light.jpg" class="th-l shot" alt="Einrichtungsassistent mit fünf Schritten" loading="lazy">
+        <img src="img/setup_light.jpg" class="shot" alt="Einrichtungsassistent mit fünf Schritten" loading="lazy">
         <figcaption>Beim ersten Start führt ein Assistent durch PS5-Verbindung, Sprachausgabe und Online-Liga.</figcaption>
       </figure>
     </section>
 
-    <section id="download" class="wrap">
+    <section id="download" class="wrap band t-dark">
       <div class="dl">
         <div>
           <span class="badge">Geschlossene Beta</span>
@@ -201,25 +210,6 @@
 
 <script>
 (function () {
-  var root = document.documentElement, btn = document.getElementById('theme');
-  function current() {
-    var t = root.getAttribute('data-theme');
-    if (t) return t;
-    return window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-  }
-  function paint() {
-    var t = current();
-    btn.textContent = t === 'light' ? '☾ Dunkel' : '☀ Hell';
-  }
-  btn.addEventListener('click', function () {
-    var t = current() === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', t);
-    try { localStorage.setItem('gt7-site-theme', t); } catch (e) {}
-    paint();
-  });
-  if (window.matchMedia) matchMedia('(prefers-color-scheme: light)').addEventListener('change', paint);
-  paint();
-
   // aktuelle Versionsnummer aus dem neuesten Release
   fetch('https://api.github.com/repos/altibe/gt7-engineer-board-releases/releases/latest')
     .then(function (r) { return r.ok ? r.json() : null; })

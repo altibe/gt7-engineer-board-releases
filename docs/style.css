@@ -160,3 +160,23 @@ footer{ border-top:1px solid var(--line); margin-top:32px; }
   .dl{ padding:22px; }
   .btn.big{ font-size:16px; padding:14px 22px; }
 }
+
+/* ---------- Baender: Abschnitte abwechselnd hell/dunkel (feste Farben, kein Umschalter) ---------- */
+.t-dark{
+  --accent:#e4f222;
+  --bg:#070908; --panel:#0e1411; --panel-2:#131c17;
+  --line:#1e2b24; --line-2:#2c3b32;
+  --text:#eef2ec; --text-2:#c3cec6; --muted:#8a998f;
+  --shadow:rgba(0,0,0,.6);
+}
+.t-light{
+  --accent:#0f4d30;
+  --bg:#f3f5f1; --panel:#ffffff; --panel-2:#eef3ee;
+  --line:#d3ddd5; --line-2:#b7c5bb;
+  --text:#0b2117; --text-2:#2c4236; --muted:#58695e;
+  --shadow:rgba(11,33,23,.16);
+}
+.band{ background:var(--bg); color:var(--text); box-shadow:0 0 0 100vmax var(--bg); clip-path:inset(0 -100vmax); }
+.feat.band{ margin:0; padding-top:64px; padding-bottom:64px; }
+#funktionen{ padding-bottom:0; }
+.more.band{ padding-top:48px; padding-bottom:48px; }
