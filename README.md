@@ -7,7 +7,7 @@
 **Kenn die Strecke. Beherrsch das Rennen.** Live-Telemetrie, Rennstrategie, Fahrer-Coaching und dein virtueller
 Renningenieur – entwickelt für Gran Turismo 7. Dieses Repository enthält nur die Installationsdateien.
 
-**[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/gt7-engineer-board-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort die Setup-Datei (`.exe`) wählen.
+**[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/tracknerd-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort die Setup-Datei (`.exe`) wählen.
 
 ## Installation
 1. Setup herunterladen und starten.
