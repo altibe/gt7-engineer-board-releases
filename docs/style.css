@@ -1,31 +1,33 @@
-/* GT7 Engineer Board – Projektseite im Altibe78-Look (Racing-Gruen + Signalgelb).
+/* TrackNerd – Projektseite nach CI v1.0 (Track Lime, Track Dark, Asphalt, Apex Gray, Clean White).
+   Lime nie als Text auf Hell: dort sind Akzente Asphalt.
    Schriften bewusst lokal/Systemschriften: keine Verbindung zu Google Fonts o. ae. */
 :root{
   color-scheme: dark;
   --sans: "Saira", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-  --brand:#0f4d30; --hi:#e4f222; --hi-ink:#0a2a1a; --accent:#e4f222;
-  --bg:#070908; --panel:#0e1411; --panel-2:#131c17;
-  --line:#1e2b24; --line-2:#2c3b32;
-  --text:#eef2ec; --text-2:#c3cec6; --muted:#8a998f;
+  --brand:#1F2933; --hi:#D6FF35; --hi-ink:#0B0F14;
+  --accent:#D6FF35;
+  --bg:#0B0F14; --panel:#1F2933; --panel-2:#26323d;
+  --line:#26313c; --line-2:#34414d;
+  --text:#F5F7FA; --text-2:#B8C0C8; --muted:#8C96A0;
   --shadow:rgba(0,0,0,.6);
 }
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
     color-scheme: light;
-    --accent:#0f4d30;
-    --bg:#f3f5f1; --panel:#ffffff; --panel-2:#eef3ee;
-    --line:#d3ddd5; --line-2:#b7c5bb;
-    --text:#0b2117; --text-2:#2c4236; --muted:#58695e;
-    --shadow:rgba(11,33,23,.16);
+    --accent:#1F2933;
+    --bg:#F5F7FA; --panel:#ffffff; --panel-2:#edf0f3;
+    --line:#dde2e7; --line-2:#c6cdd4;
+    --text:#0B0F14; --text-2:#1F2933; --muted:#46525F;
+    --shadow:rgba(11,15,20,.14);
   }
 }
 :root[data-theme="light"]{
   color-scheme: light;
-  --accent:#0f4d30;
-  --bg:#f3f5f1; --panel:#ffffff; --panel-2:#eef3ee;
-  --line:#d3ddd5; --line-2:#b7c5bb;
-  --text:#0b2117; --text-2:#2c4236; --muted:#58695e;
-  --shadow:rgba(11,33,23,.16);
+  --accent:#1F2933;
+  --bg:#F5F7FA; --panel:#ffffff; --panel-2:#edf0f3;
+  --line:#dde2e7; --line-2:#c6cdd4;
+  --text:#0B0F14; --text-2:#1F2933; --muted:#46525F;
+  --shadow:rgba(11,15,20,.14);
 }
 
 *{ box-sizing:border-box; }
@@ -163,20 +165,34 @@ footer{ border-top:1px solid var(--line); margin-top:32px; }
 
 /* ---------- Baender: Abschnitte abwechselnd hell/dunkel (feste Farben, kein Umschalter) ---------- */
 .t-dark{
-  --accent:#e4f222;
-  --bg:#070908; --panel:#0e1411; --panel-2:#131c17;
-  --line:#1e2b24; --line-2:#2c3b32;
-  --text:#eef2ec; --text-2:#c3cec6; --muted:#8a998f;
+  --accent:#D6FF35;
+  --bg:#0B0F14; --panel:#1F2933; --panel-2:#26323d;
+  --line:#26313c; --line-2:#34414d;
+  --text:#F5F7FA; --text-2:#B8C0C8; --muted:#8C96A0;
   --shadow:rgba(0,0,0,.6);
 }
 .t-light{
-  --accent:#0f4d30;
-  --bg:#f3f5f1; --panel:#ffffff; --panel-2:#eef3ee;
-  --line:#d3ddd5; --line-2:#b7c5bb;
-  --text:#0b2117; --text-2:#2c4236; --muted:#58695e;
-  --shadow:rgba(11,33,23,.16);
+  --accent:#1F2933;
+  --bg:#F5F7FA; --panel:#ffffff; --panel-2:#edf0f3;
+  --line:#dde2e7; --line-2:#c6cdd4;
+  --text:#0B0F14; --text-2:#1F2933; --muted:#46525F;
+  --shadow:rgba(11,15,20,.14);
 }
 .band{ background:var(--bg); color:var(--text); box-shadow:0 0 0 100vmax var(--bg); clip-path:inset(0 -100vmax); }
 .feat.band{ margin:0; padding-top:64px; padding-bottom:64px; }
 #funktionen{ padding-bottom:0; }
 .more.band{ padding-top:48px; padding-bottom:48px; }
+
+/* TrackNerd-Ergaenzungen (19.10.2026) */
+.hero h1{ font-size:clamp(32px, 4.4vw, 54px); }
+.hero h1 em{ display:block; }
+.hero-img.shot{ border-radius:8px; }
+.intro{ color:var(--muted); margin:-12px 0 28px; }
+.new{ display:inline-block; vertical-align:middle; font-size:11px; font-style:normal; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--hi-ink); background:var(--hi); padding:1px 8px; border-radius:3px; margin-left:4px; }
+.t-light .new{ background:var(--hi); box-shadow:inset 0 0 0 1px #1F2933; }
+.feat .tall{ max-width:560px; justify-self:center; }
+.bubble.ask{ border-left-color:var(--muted); font-weight:600; color:var(--text-2); }
+.pair{ display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+.pair figure{ margin:0; }
+@media (max-width:900px){ .pair{ grid-template-columns:1fr; } }
