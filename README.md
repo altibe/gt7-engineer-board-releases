@@ -6,17 +6,15 @@
 
 **Kenn die Strecke. Beherrsch das Rennen.** Live-Telemetrie, Rennstrategie, Fahrer-Coaching und dein virtueller
 Renningenieur – entwickelt für Gran Turismo 7. Dieses Repository enthält nur die Installationsdateien.
-Bis Version 0.3 hieß das Programm „GT7 Engineer Board“; Setup-Datei und Installationsordner behalten den Namen,
-damit Updates und deine Daten erhalten bleiben.
 
-**[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/gt7-engineer-board-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort `GT7-Engineer-Board-Setup-x.y.z.exe` wählen.
+**[Projektseite mit Funktionen und Screenshots](https://altibe.github.io/gt7-engineer-board-releases/)** · **[Neueste Version herunterladen](../../releases/latest)** – dort die Setup-Datei (`.exe`) wählen.
 
 ## Installation
 1. Setup herunterladen und starten.
 2. Windows warnt „Der Computer wurde durch Windows geschützt“ (das Setup ist nicht signiert):
    **Weitere Informationen → Trotzdem ausführen**.
 3. Keine Administratorrechte nötig. Haken „Firewall-Regeln anlegen“ drin lassen.
-4. Start über die Verknüpfung **TrackNerd** (bis Version 0.3: **GT7 Engineer Board**).
+4. Start über die Verknüpfung **TrackNerd**.
 
 ## Beim ersten Start
 Ein Einrichtungsassistent führt durch PS5-Verbindung, Sprachausgabe (eigener Discord-Bot, optional)
